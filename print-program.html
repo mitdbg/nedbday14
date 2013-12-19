@@ -1,0 +1,679 @@
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <script type="text/javascript">
+
+function toggle(element) {
+
+  if (document.getElementById(element).style.display == "none") {
+
+    document.getElementById(element).style.display = "";
+
+  } else {
+
+    document.getElementById(element).style.display = "none";
+
+  }
+
+}
+
+</script> <title>New England Database Summit 2011 Program</title>
+    <style type="text/css">
+h2 {
+padding-left: 0em;
+      color : #0000CC;
+
+}
+
+title {
+}
+
+authors {
+}
+
+abstract {
+}
+
+BODY {
+padding-left: 2em;
+      background-color : #FFFFFF;
+      font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+      color : #000088;
+      margin: 0px; 
+      width: 1000px;
+      }
+  ul.navbar {
+    position: absolute;
+    top: 0em;
+    left: 1em;
+    width: 11em }
+
+</style> </head>
+  <body fgcolor="#000000" style="                background-color: white;">
+    <table>
+      <tbody>
+        <tr>
+          <td>
+<center>
+	  <table><tr><td align=left width=250>
+              <img src="logo.jpg" width="200">
+	      <td>
+	      <center>
+            <h2> New England Database Summit 2012 Program 
+	    </center>
+            </h2>
+</table>
+</center>
+<h3> <center>  Friday, February 3, 2012  </center> </h3>
+            <center>
+              Special thanks to this year's sponsors:<br>
+                <br>
+                <table border="0" cellspacing="0" width="50%">
+                  <tbody>
+                    <tr>
+                      <td align=center>&nbsp;<img style="width: 160px; height: 57px;" alt="emc_logo"
+                          src="logos/emc.jpeg"></td>
+                      <td align="center"><img src="logos/microsoft.jpg" width="180"></td>
+                      <!--	  <td><img style="width: 195px; height: 49px;" alt="paradigm4_logo"
+ title="paradigm4_logo" src="logos/paradigm4.gif"><br>-->
+                    </tr>
+                  </tbody>
+                </table>
+              </p>
+            </center>
+              <h5> All Events Except Lunch and Reception in 32-123. 
+              <table frame="border">
+                <tbody>
+                  <tr>
+                    <td width="150"> <u>Time</u> </td>
+                    <td> <u>Event</u> </td>
+                  </tr>
+                  <tr>
+                    <td> 9:00-9:10am<br>
+                    </td>
+                    <td> <strong>Welcome</strong> (U. Cetintemel and S. Madden)</td>
+                  </tr>
+                  <tr>
+                    <td valign="top"> 9:10-10:00</td>
+                    <td> <strong>Keynote 1</strong>: Johannes Gehrke (Cornell).
+                      <em>Declarative Data-Driven Coordination</em>. <a href="javascript:toggle(-2)"></a>
+                      <div id="-2" style="display: none;">
+                        <p style="color: red; font-size: 70%;"> There are many
+                          web applications that require users to coordinate and
+                          communicate. Friends want to coordinate travel plans,
+                          students want to jointly enroll in the same set of
+                          courses, and busy professionals want to coordinate
+                          their schedules. These tasks are difficult to program
+                          using existing abstractions provided by database
+                          systems since they all require some type of
+                          coordination between users. However, this type of
+                          information flow is fundamentally incompatible with
+                          classical isolation in database transactions. In this
+                          talk, I will argue that it is time to look beyond
+                          isolation towards principled and elegant abstractions
+                          that allow for communication and coordination between
+                          some notion of (suitably generalized) transactions.
+                          This new area of declarative data-driven coordination
+                          is motivated by many novel applications and is full of
+                          challenging research problems. This talk describes
+                          joint work with Gabriel Bender, Nitin Gupta, Christoph
+                          Koch, Lucja Kot, Milos Nikolic, and Sudip Roy. </p>
+                        <p style="color: red; font-size: 70%;"> About the
+                          speaker: Johannes Gehrke is a Professor in the
+                          Department of Computer Science at Cornell University.
+                          Johannes' research interests are in the areas of
+                          database systems, data mining, data privacy, and
+                          applications of database and data mining technology to
+                          marketing and the sciences. Johannes has received a
+                          National Science Foundation Career Award, an Arthur P.
+                          Sloan Fellowship, an IBM Faculty Award, the Cornell
+                          College of Engineering James and Mary Tien Excellence
+                          in Teaching Award, the Cornell University Provost's
+                          Award for Distinguished Scholarship, a Humboldt
+                          Research Award from the Alexander von Humboldt
+                          Foundation, the 2011 IEEE Computer Society Technical
+                          Achievement Award, and the 2011 Blavatnik Award for
+                          Young Scientists. He is the author of numerous
+                          publications on data mining and database systems, and
+                          he co-authored the undergraduate textbook Database
+                          Management Systems (McGrawHill (2002), currently in
+                          its third edition), used at universities all over the
+                          world. Johannes is also an Adjunct Professor at the
+                          University of Tromsø in Norway. Johannes was Program
+                          co-Chair of the 2004 ACM International Conference on
+                          Knowledge Discovery and Data Mining (KDD 2004),
+                          Program Chair of the 33rd International Conference on
+                          Very Large Data Bases (VLDB 2007), and Program
+                          co-Chair of the 28th IEEE International Conference on
+                          Data Engineering (ICDE 2012). From 2007 to 2008, he
+                          was Chief Scientist at FAST, A Microsoft Subsidiary. </p>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+<tr></tr>
+                    <td> 10:00-10:20</td>
+                    <td> Coffee Break</td>
+                  </tr>
+                  <tr>
+                    <td>&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <th colspan="3" bgcolor="#8888FF"> Session 1 : New Tools and
+                      Systems  </th>
+                  </tr>
+                  <tr>
+                    <td valign="top">10:20-10:40</td>
+                    <td> Daniel Bruckner and Michael Stonebraker. <i>Curating
+                        Data at Scale: The Data Tamer System. </i><a href="javascript:toggle(12)"></a>
+                      <div id="12" style="display: none;">
+                        <p style="color: red; font-size: 70%;"> A data curator
+                          is an integrated system for managing heterogeneous
+                          collections of data sources. Such collections are
+                          valuable to analysts, but they are often expensive to
+                          construct because of several common challenges. These
+                          include cleaning and transforming individual sources,
+                          semantic discovery and integration between sources,
+                          and de-duplication within composites. While there has
+                          been much research on the various components of
+                          curation, e.g., integration and de-duplication, there
+                          has been little work on uniting them in an integrated
+                          system. In addition, most of the previous work will
+                          not scale to the sizes of problems that we are finding
+                          in the field. For example, one web aggregator
+                          (Goby.com) requires the curation of 80,000 URLs. A
+                          second company, in biotech (Novartis), has the problem
+                          of curating 8,000 spreadsheets. At this scale,
+                          curation cannot be done manually, i.e., by humans, but
+                          must entail a combination of machine learning
+                          approaches with human assistance when necessary. This
+                          talk will describe Data Tamer, a curation system we
+                          have built at M.I.T. It subjects a collection of data
+                          sources to machine learning algorithms to perform
+                          attribute identification, grouping of attributes into
+                          tables, transformation of incoming data, and
+                          de-duplication. When data is updated and new sources
+                          are added, the target collection is incrementally
+                          reanalyzed. At any time, a human can intervene to give
+                          guidance. Data Tamer includes a data visualization
+                          system (Wrangler) so a human can examine a data source
+                          and specify transformations. We have run Data Tamer on
+                          the Goby.com data and it lowers curation costs by
+                          about 90\%. Similar results have been observed on the
+                          Novartis data. Besides a description of the system, we
+                          will perform a Data Tamer demo. </p>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td valign="top">10:40-11:00</td>
+                    <td>Willis Lang and Jignesh M. Patel. <i> Energy-Conscious
+                        Data Management Systems: The Need for a Closer Hardware
+                        and Software Synergy. </i><a href="javascript:toggle(26)"></a>
+                      <div id="26" style="display: none;">
+                        <p style="color: red; font-size: 70%;"> There is a
+                          growing, real, and urgent demand for energy-efficient
+                          database processing. Fueled in part, by the impending
+                          end of multi-core scaling’s ability to sustain Moore’s
+                          Law due to energy inefficiency, hardware design -ers
+                          are increasingly exposing different power/performance
+                          trade-off mechanisms to higher-level software systems.
+                          Since data processing tasks typically have acceptable
+                          levels of performance, such as acceptable query
+                          latency, data processing systems have a great
+                          opportunity to exploit these hardware
+                          power/performance mechanisms to decrease energy
+                          consumption. The focus of this presentation is on the
+                          design and evaluation of a general framework for query
+                          optimization that considers both performance
+                          constraints and energy consumption as first-class
+                          optimization criteria. Our experimental evaluations
+                          show that our system-wide energy savings can be
+                          significant and point toward greater opportunities
+                          with upcoming energy-aware technologies on the
+                          horizon.</p>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td valign="top">11:00-11:20</td>
+                    <td>Jeong-Hyon Hwang, Jeremy Birnbaum, Sean R. Spillane,
+                      Jayadevan Vijayan. <i>G*: A Parallel System for
+                        Efficiently Managing Large Graphs. </i><a href="javascript:toggle(45)"></a>
+                      <div id="45" style="display: none;">
+                        <p style="color: red; font-size: 70%;"> Complex networks
+                          such as human social groups, transportation networks
+                          and the World Wide Web are frequently represented as
+                          graphs. Crucial aspects of a dynamic network, like the
+                          variation of shortest distance between points of
+                          interest, can be discovered by processing a collection
+                          of graphs that represent the network at different
+                          times. Applications which can benefit from such
+                          analysis include national security, sociopolitical
+                          studies, economics, healthcare and transportation. We
+                          present a new system, G*, that is uniquely suited to
+                          the applications mentioned above. G* can efficiently
+                          store collections of large graphs within a server
+                          cluster without duplicating the commonalities between
+                          these graphs. In contrast to traditional database
+                          management systems and graph processing systems, G*
+                          provides a declarative language that can succinctly
+                          express sophisticated queries on multiple graphs. G*
+                          executes a query using a network of operators that
+                          process, in parallel, the distributed graph data and
+                          produce the query result. To speed up queries on
+                          multiple graphs, G* processes each graph vertex and
+                          its edges only once and shares the result across all
+                          of the relevant graphs. G* also provides a set of
+                          processing primitives that abstract away the
+                          complexity of distributed data management, thereby
+                          allowing the simple implementation of parallel graph
+                          processing operators. Our evaluation shows that G*
+                          significantly outperforms both traditional database
+                          systems and state-of-the-art graph processing systems
+                          at storing and processing multiple graphs while
+                          achieving a high degree of scalability. This talk will
+                          include a brief demonstration of the current G*
+                          system.</p>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td valign="top">11:20-11:40</td>
+                    <td> Richard Tibbetts, Steven Yang, Rob MacNeill, David
+                      Rydzewski. <i> StreamBase LiveView: Push-Based Business
+                        Intelligence. </i><a href="javascript:toggle(20)"></a>
+                      <div id="20" style="display: none;">
+                        <p style="color: red; font-size: 70%;"> StreamBase
+                          LiveView is a new approach to business intelligence in
+                          environments where large volumes of data require a
+                          management by exception approach to business
+                          operations. StreamBase LiveView combines techniques
+                          from complex event processing (CEP), active databases,
+                          online analytic processing (OLAP) and data warehousing
+                          to create a live data warehouse against which
+                          continuous queries are executed. The resulting system
+                          enables users to make ad hoc queries against tens of
+                          millions of live updating records, and receive
+                          push-based updates when the results of their queries
+                          change. This system is used for operational and risk
+                          monitoring in high frequency trading environments,
+                          where conditional alerting and automated remediation
+                          enable a handful of operators to manage millions of
+                          transactions per day, and make the results of trading
+                          visible to hundreds of customers in real-time. </p>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td valign="top">11:40-12:00</td>
+                    <td>David Karger. <i>Documents with Databases Inside Them.
+                      </i><a href="javascript:toggle(37)"></a>
+                      <div id="37" style="display: none;">
+                        <p style="color: red; font-size: 70%;"> Dido is an
+                          application (and application development environment)
+                          in a web page. It is a single web page containing rich
+                          structured data, an AJAXy interactive
+                          visualizer/editor for that data, and a ``metaeditor''
+                          for WYSIWYG editing of the visualizer/editor.
+                          Historically, users have been limited to the data
+                          schemas, visualizations, and interactions offered by a
+                          small number of heavyweight applications. In contrast,
+                          Dido encourages and enables the end user toedit (not
+                          code) in his or her web browser a distinct ephemeral
+                          interaction ``wrapper'' for each data collection that
+                          is specifically suited to its intended use. Dido's
+                          active document metaphor has been explored before but
+                          we show how, given today's web infrastructure, it can
+                          be deployed in a small self-contained HTML document
+                          without touching a web client or server. </p>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td> 12:00-12:50 </td>
+                    <td> <strong>Box Lunch (Room 32-G449 Patil/Kiva -- see map)</strong> </td>
+                  </tr>
+                  <tr>
+                    <td> 12:50-1:10 </td>
+                    <td> <strong>Sponsor Acknowledgements</strong> </td>
+                  </tr>
+                  <tr>
+                    <td><br>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td valign="top"> 1:10-2:00</td>
+                    <td> <strong>Keynote 2</strong>: Mark Callaghan (Facebook).
+                      <i>Performance is Overrated.</i> <a href="javascript:toggle(-1)"></a>
+                      <div id="-1" style="display: none;">
+                        <p style="color: red; font-size: 70%;"> Performance gets
+                          much more attention than manageability in the DBMS
+                          market. I think it should be the other way around as
+                          manageability is at least as important for the
+                          deployments that I support. I will describe the
+                          manageability problems we confront for a scale-out
+                          deployment of MySQL. I will also include several
+                          examples where manageability enables performance
+                          improvements. The content will be relevant to those
+                          interested in building DBMS products. </p>
+                        <p style="color: red; font-size: 70%;"> About the
+                          speaker: Mark leads the MySQL development team at
+                          Facebook and makes MySQL better for a large
+                          deployment. Prior to that he led the MySQL development
+                          team at Google. He also worked at Oracle, Identity
+                          Engines and Informix on database internals. Mark has
+                          an MS in Computer Science from the University of
+                          Wisconsin-Madison. </p>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <th colspan="3" bgcolor="#8888FF"> Session 2: Optimizing
+                      Hadoop </th>
+                  </tr>
+                  <tr>
+                    <td valign="top">2:00-2:20</td>
+                    <td>Daniel Abadi <i>. Turning Hadoop Into an All-Purpose
+                        Data Processing Platform. </i><a href="javascript:toggle(23)"></a>
+                      <div id="23" style="display: none;">
+                        <p style="color: red; font-size: 70%;"> As Hadoop
+                          rapidly becomes the universal standard for scalable
+                          data analysis and processing, it is increasingly
+                          important to understand its strengths and weaknesses
+                          in order to optimize for efficiency in its numerous
+                          application scenarios. For example, Hadoop can be used
+                          for processing unstructured data, semi-structured
+                          data, relational data, and even graph data. Although
+                          there is plenty of room to improve the performance of
+                          Hadoop on any of these types of data, Hadoop’s
+                          performance on relational data and graph data is
+                          particularly far from optimal. In this talk, Daniel
+                          Abadi will describe the design of Hadapt, which
+                          improves Hadoop’s performance on relational data by a
+                          factor of 50, largely through modifications to the
+                          storage layer. If enough time is allocated to the
+                          talk, Abadi will also describe some research that
+                          shows how to improve Hadoop’s performance on graph
+                          data by an even larger factor.</p>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td valign="top">2:20-2:40</td>
+                    <td>Mohamed Y. Eltabakh, Yuanyuan Tian, Fatma Ozcan, Rainer
+                      Gemulla, Aljoscha Krettek, John McPherson. <i>CoHadoop:
+                        Flexible Data Placement and Its Exploitation in Hadoop.
+                      </i><a href="javascript:toggle(27)"></a>
+                      <div id="27" style="display: none;">
+                        <p style="color: red; font-size: 70%;"> Hadoop has
+                          become an attractive platform for large-scale data
+                          analytics. In this paper, we identify a major
+                          performance bottleneck of Hadoop: its lack of ability
+                          to colocate related data on the same set of nodes. To
+                          overcome this bottleneck, we introduce CoHadoop, a
+                          lightweight extension of Hadoop that allows
+                          applications to control where data are stored. In
+                          contrast to previous approaches, CoHadoop retains the
+                          flexibility of Hadoop in that it does not require
+                          users to convert their data to a certain format (e.g.,
+                          a relational database or a specific file format).
+                          Instead, applications give hints to CoHadoop that some
+                          set of files are related and may be processed jointly;
+                          CoHadoop then tries to colocate these files for
+                          improved efficiency. Our approach is designed such
+                          that the strong fault tolerance properties of Hadoop
+                          are retained. Colocation can be used to improve the
+                          efficiency of many operations, including indexing,
+                          grouping, aggregation, columnar storage, joins, and
+                          sessionization. We conducted a detailed study of joins
+                          and sessionization in the context of log
+                          processing---a common use case for Hadoop---, and
+                          propose efficient map-only algorithms that exploit
+                          colocated data partitions. In our experiments, we
+                          observed that CoHadoop outperforms both plain Hadoop
+                          and previous work. In particular, our approach not
+                          only performs better than repartition-based
+                          algorithms, but also outperforms map-only algorithms
+                          that do exploit data partitioning but not colocation.</p>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+<tr></tr>
+                    <td> 2:40-3:00</td>
+                    <td> Coffee Break</td>
+                  </tr>
+                  <tr>
+                    <td><br>
+                    </td>
+                    <td><br>
+                    </td>
+                    <td><br>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th colspan="3" bgcolor="#8888FF"> Session 3: Data and
+                      Workload Partitioning </th>
+                  </tr>
+                  <tr>
+                    <td valign="top">3:00-3:20</td>
+                    <td>Andy Pavlo. <i>Making Fast Databases Faster. </i><a href="javascript:toggle(43)"></a>
+                      <div id="43" style="display: none;">
+                        <p style="color: red; font-size: 70%;"> Anybody can make
+                          a fast database management system (DBMS) just by
+                          storing all of their data in main memory. The real
+                          challenge is in how one makes such systems go even
+                          faster and scale to support the demands of modern
+                          web-scale on-line transaction processing (OLTP)
+                          applications. Many of the so-called NoSQL systems are
+                          simply not an option for applications that are unable
+                          to relax their ACID requirements. Thus, a new emerging
+                          class of parallel main memory DBMSs are designed to
+                          take advantage of these application's partitionable
+                          workloads while maintaining traditional DBMS
+                          guarantees. But because storage I/O is no longer the
+                          bottleneck in a diskless environment, new challenges
+                          arise that often cannot be overcome just by adding
+                          more hardware. This talk will discuss our research in
+                          improving the performance of systems that are already
+                          fast to begin with. The first part of the talk will
+                          discuss techniques for automatically partitioning a
+                          main memory, shared-nothing database such that it
+                          maximizes the number of single-partition transactions.
+                          In the second part, we will present a novel approach
+                          for dynamically selecting the proper transaction
+                          optimizations at run time. Such optimizations are
+                          applied both before a transaction begins to execute
+                          (e.g., reduced concurrency control), as well as while
+                          it executes (e.g., query pre-fetching and speculative
+                          execution). </p>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td valign="top">3:20-3:40</td>
+                    <td>Alvin Cheung, Owen Arden, Samuel Madden, Andrew Myers. <i>
+                        Automatic Partitioning of Database Applications. </i><a
+                        href="javascript:toggle(48)"></a>
+                      <div id="48" style="display: none;">
+                        <p style="color: red; font-size: 70%;"> Database-backed
+                          applications are nearly ubiquitous, especially as a
+                          building block for web-based applications. One
+                          challenge with such applications is that for
+                          transactional workloads that do many small accesses to
+                          the database, they waste resources and increase
+                          latency by incurring many separate round trips (one
+                          per SQL statement) to access the database. A well
+                          known technique to improve transactional database
+                          application performance is to convert part of the
+                          application into stored procedures that are executed
+                          on the database server. Unfortunately, this requires
+                          re-coding parts of application as stored procedures,
+                          and having a detailed understanding of the parts of
+                          the program that are good to push into the database
+                          (e.g., those that reduce communication). Often this
+                          can be difficult even for experts because, for
+                          example, the database server might already be loaded
+                          by other applications, and pushing any additional code
+                          into it would actually slow down execution rather than
+                          speed up. In general, developers frequently have no
+                          idea about the amount of resources that are available
+                          on the server that hosts their applications, thus
+                          making it even more difficult to write
+                          performance-aware programs. To address this challenge,
+                          we are building Pyxis, a system that takes
+                          database-backed applications and automatically
+                          partitions their code into two pieces, one of which is
+                          executed on the application server, and the other on
+                          the database server. Pyxis first profiles the
+                          application and server loads, and produces a
+                          partitioning using the program dependence graph that
+                          minimizes the number of control transfers and the
+                          amount of data sent during each transfer. Our initial
+                          experiments using TPCC shows that Pyxis is able to
+                          generate partitions with 50% less latency and the same
+                          throughput when compared to a traditional jdbc-based
+                          implementation, and has comparable performance with a
+                          custom stored procedure implementation.</p>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th colspan="3" bgcolor="#8888FF"> Session 4: Persistence
+                      and Logging  </th>
+                  </tr>
+                  <tr>
+                    <td valign="top">3:40-4:00</td>
+                    <td> Jaeyoung Do, Donghui Zhang, Jignesh M. Patel, David J.
+                      DeWitt.<i> Racing to the Peak: Fast Restart for SSD Buffer
+                        Pool Extension. </i><a href="javascript:toggle(54)"></a>
+                      <div id="54" style="display: none;">
+                        <p style="color: red; font-size: 70%;"> A promising
+                          usage of Flash solid-state drives (SSDs) in a DBMS is
+                          to extend the buffer pool. Most existing work on SSD
+                          buffer-pool extension does not utilize the
+                          non-volatile feature of the SSD, and therefore suffers
+                          from long peak-to-peak interval. To reuse the data
+                          cached in the SSD buffer pool after a restart, it is
+                          important to make the SSD buffer table persistent. An
+                          existing approach achieved this by storing the SSD
+                          buffer table as a memory-mapped file. But this
+                          “quick-fix” results in lower sustained performance,
+                          because every update in the SSD buffer table may lead
+                          to an I/O. In this paper we propose two new designs.
+                          One design reconstructs the SSD buffer table through
+                          the transactional log. The other design asynchronously
+                          flushes the SSD buffer table, and upon a restart,
+                          lazily verifies the integrity of the data cached in
+                          the SSD buffer pool. We implemented the three designs
+                          in SQL Server. For each design, both a write-through
+                          method and a write-back method were implemented. We
+                          ran experiments using a variety of benchmarks, and
+                          show the tradeoffs of the design alternatives. The
+                          pitfalls that we discovered are revealed.</p>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td valign="top">4:00-4:20</td>
+                    <td> Yandong Mao, Eddie Kohler, and Robert Morris.<i> Cache
+                        Craftiness for Fast Multicore Key-Value Storage. </i><a
+                        href="javascript:toggle(100)"></a>
+                      <div id="100" style="display: none;">
+                        <p style="color: red; font-size: 70%;"> Scotch is a fast
+                          in-memory key-value data store for SMP machines. Data
+                          resides in memory in a kind of Blink - tree [3].
+                          Persistence is ensured through concurrent logs and
+                          checkpoints. The key to Scotch’s performance is
+                          reducing DRAM stalls and managing memory caches.
+                          Scotch combines latch-free (lock-free) lookup, via
+                          read-copy-update techniques [4, 6], with local
+                          latching on updates. On a 16-core machine, with remote
+                          clients accessing the tree via the network, Scotch can
+                          achieve up to 2.7 Mops/s on VoltDB’s “volt2” benchmark
+                          [2] (small keys and values), about 20x more than a
+                          best-performing VoltDB deployment on the same
+                          hardware. (VoltDB of course supports more features
+                          than Scotch, but we disabled many features, including
+                          replication.) With logging disabled, Scotch achieves
+                          4.3 Mops/s. Without the network and logging
+                          components, Scotch’s tree can currently achieve 21
+                          Mops/s for lookups on some benchmarks. Nevertheless,
+                          the network and logging components are not the only
+                          bottleneck—tree design matters even in the context of
+                          a full system. A version of Scotch using a balanced
+                          binary tree has half Scotch’s throughput on our
+                          benchmarks.</p>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td valign="top">4:20-4:40</td>
+                    <td>Ross Shaull and Liuba Shrira. <i> Retro: Modular and
+                        Efficient Retrospection in a Database. </i><a href="javascript:toggle(21)"></a>
+                      <div id="21" style="display: none;">
+                        <p style="color: red; font-size: 70%;"> Applications
+                          need to analyze past states to detect trends and
+                          anomalies so they can exploit opportunities and
+                          prevent disasters. Today, support for programs that
+                          analyze past states (retrospection) is available in
+                          some fully-featured commercial relational databases
+                          but it is not available for many applications that
+                          consider a fully-featured SQL-based relational
+                          database to be too heavy-weight. Instead, these
+                          applications rely on a growing list of simpler
+                          light-weight and mid-tier databases such as Berkeley
+                          DB, SQLite and MongoDB, to name just a few.
+                          Light-weight databases typically provide no support
+                          for retrospection, requiring application developers to
+                          roll their own. Without adequate support, it is hard
+                          for application developers to reconstruct the
+                          consistent states corresponding to the past events of
+                          interest. A key reason for this unfortunate situation
+                          is that up to now there was no way to add efficient
+                          support for retrospection in a database, without
+                          extensive, prohibitively costly modifications to
+                          database internals. We have invented a new way to add
+                          efficient support for retrospection in a transactional
+                          database. A key feature of our approach, called Retro,
+                          is that its implementation requires only modest
+                          modification to the database internals. The modest
+                          scope of the modification provides important software
+                          engineering and performance benefits. Retro can be
+                          easily implemented in a high-performance transactional
+                          database while inheriting the database's
+                          highly-engineered performance characteristics.</p>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td> 4:50 PM</td>
+                    <td> <strong>Poster Session</strong>
+                      and Appetizers / Drinks (Building 32, R&amp;D Area, 4th
+                      Floor) -- see map.</td>
+                  </tr>
+                  <tr>
+                    <td> 6:30 PM</td>
+                    <td> Adjourn </td>
+                  </tr>
+                </tbody>
+              </table>
+              <!-- Details coming soon!  A <a href="papers.php"> list of accepted papers </a> is available. -->
+            </h3>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+For wireless access, use the network named “MIT” inside of 32-123.  You will need to register as a guest, after which it may take several minutes to get on the Internet.  Elsewhere in the building the “StataGuest” network is completely open.
+</html>

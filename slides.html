@@ -1,0 +1,163 @@
+<html>
+
+<head>
+
+<script type="text/javascript">
+
+function toggle(element) {
+
+  if (document.getElementById(element).style.display == "none") {
+
+    document.getElementById(element).style.display = "";
+
+  } else {
+
+    document.getElementById(element).style.display = "none";
+
+  }
+
+}
+
+</script>
+
+<title>New England Database Presentations</title>
+<style type="text/css">
+h2 {
+padding-left: 0em;
+      color : #0000CC;
+
+}
+BODY {
+padding-left: 16em;
+      background-color : #FFFFFF;
+      font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+      color : #000088;
+      margin: 0px; 
+      width: 700px;
+      }
+  ul.navbar {
+    position: absolute;
+    top: 0em;
+    left: 1em;
+    width: 11em }
+
+</style>
+
+</head>
+<body bgcolor=#FFFFFF fgcolor=#000000>
+
+<table>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td>
+<h2>
+Presentations from NEDBDay
+</h2>
+<h3>
+ February 4, 2008
+</h3>
+
+
+<!-- Site navigation menu -->
+<ul class="navbar">
+<img src="logo.jpg" width=200></img> 
+  <li><a href="index.html">Home page</a>
+  <li>Paper Submission (closed)
+  <li><a href="htdocs/index.php">Registration</a>
+  <li><a href="htdocs/program.php">(New!) Program</a></a>
+  <li><a href="htdocs/papers.php">Accepted Papers</a>
+  <li><a href="htdocs/posters.php">Accepted Posters</a>
+  <li><a href="http://whereis.mit.edu/map-jpg?selection=32">Map</a>
+</ul>
+
+
+<table frame = 'border'>
+<tr <td> David J. DeWitt. <i>Clustera:  A Data-Centric Approach to Scalable Cluster Management.</i>
+<a href="javascript:toggle(-1)">Click to toggle abstract. </a> <div id="-1" style = 'display: None;'> <p style = "color:red; font-size:70%">  Twenty-five years ago, when we built our first cluster management system using a collection of twenty VAX 11/750 computers, the idea of a compute cluster was an exotic concept.  Today, clusters of 1,000 nodes are common and some of the biggest have in excess of 10,000 nodes.   Such clusters are simply awash in data about machines, users, jobs, and files.  Many of the tasks that such systems are asked to perform are very similar to database transactions. For example, the system must accept jobs from users and send them off to be executed. The system should not “drop” jobs or lose files due to hardware or software failures. The software must also allow users to stop failed computations or “change their mind” and retract thousands of submitted but not yet completed jobs.   Amazingly, no cluster management system that we are aware of uses a database system for managing its data. 
+<p style = "color:red; font-size:70%"> In this talk I will describe Clustera, a new cluster management system we have been working for the last three years.  As one would expect from some database types, Clustera uses a relational DBMS to store all its operational data including information about jobs, users, machines, and files (executable, input, and output).   One unique aspect of the Clustera design is its use of an application server (JBoss currently) in front of the relational DBMS.  Application servers have a number of appealing capabilities.   First, they can handle 10s of 1000s of clients.  Second, they provide fault tolerance and scalability by running on multiple server nodes.  Third, they multiplex connections to the database system to a level that the database system can comfortably support.   Compute nodes in a Clustera cluster appear as web clients to the application server and make SOAP calls to submit requests for jobs to execute and to update status information that is stored in the relational database.
+<p style = "color:red; font-size:70%"> Extensibility is a second key goal of the Clustera project.  Traditional cluster management systems such as Condor were targeted toward long-running, computational intensive jobs.   Newer systems such as Map-Reduce are targeted toward a specific type of data intensive parallel computation.   Parallel SQL database systems represent a third type of cluster management system.   The design of the Clustera framework was designed to handle each of these classes of jobs in a common execution and data framework.
+</div>
+[Slides coming soon.]
+
+ </td> </tr>
+<tr> <td>Gerome Miklau. <i>Managing Historical Retention in Database Systems. </i><a href="javascript:toggle(114)">Click to toggle abstract. </a> <div id="114" style = 'display: None;'> <p style = "color:red; font-size:70%">  Databases that preserve a historical record of operations and data  
+offer the important benefit of system accountability: past events can  
+be analyzed to detect breaches and maintain data quality.  But the  
+retention of history can also pose a threat to privacy.  System  
+designers need to carefully balance the need for privacy and  
+accountability by controlling how and when data is retained by the  
+system, and who will be able to recover and analyze it.  These issues are often embodied by retention policies (either established by an institution, or mandated by privacy regulations) which specify how long data of certain types should be retained.  Unfortunately, database systems are not well-equipped to enforce retention policies and balance this need with system accountability.</div> [<a href="slides/miklau.pdf">Slides</a>]</td></tr>
+
+<tr <td>Brian Berenbach. <i>Requirements Engineering Databases: The Good, The Bad and the Ugly. </i><a href="javascript:toggle(102)">Click to toggle abstract. </a> <div id="102" style = 'display: None;'> <p style = "color:red; font-size:70%">  Requirements engineering databases are used throughout industry to store and manage requirements for new and existing products. The requirements engineering program at Siemens Corporate Research (SCR) has provided training, mentoring and consulting services to nearly every operating company at Siemens, working in healthcare, automation, transportation and the automotive sectors. We have worked on projects with requirements databases with up to 30 gigabytes or more of stored material; projects with over 30 thousand requirements. To date, the available commercial databases have not kept pace with the needs of industry; Siemens organizations have struggled with defining and managing requirements and the generation of documentation using tools that are in many cases inadequate, improperly configured, or simply do not work. In this talk I will discuss our experiences using commercial requirements engineering databases, describe the deficiencies of the databases in the market place, and suggest what functionality the databases need to have in the short and long term to remain viable. </div> [<a href="slides/berenbach.pdf">Slides</a>]</td></tr>
+
+<tr> <td>Stavros Harizopoulos. <i>Designing a Next-generation OLTP Engine. </i><a href="javascript:toggle(134)">Click to toggle abstract. </a> <div id="134" style = 'display: None;'> <p style = "color:red; font-size:70%">  Today&#39;s enterprise information management infrastructure can be viewed as a supply chain with four major components. Business events are first captured by the Online Transaction Processing (OLTP) system; subsequently that information is periodically sent to the Extract-Transform-Load (ETL) engine which loads the data to the Enterprise Data Warehouse (EDW); Business Intelligence Applications (BIA) extract data for analysis to guide business decisions. Increased costs of ownership and complexity in system management, coupled with the need of reducing the latency between a business event and a business action, open the door to the idea of a unified single platform that combines all four components of enterprise information management. Operating under the same roof, besides the obvious benefits in cost reductions, allows system designers to perform end-to-end optimizations, providing higher overall performance, and supporting new capabilities that are not possible in the component-based architecture. In such a unified platform, designing a high-performance OLTP kernel with minimal resource utilization is crucial.
+
+</div> [Slides coming soon]</a></td></tr>
+
+<tr> <td>Ryan Johnson. <i>Taming Shared Work To Maximize Query Throughput. </i><a href="javascript:toggle(132)">Click to toggle abstract. </a> <div id="132" style = 'display: None;'> <p style = "color:red; font-size:70%">  This talk will summarize my work on maximizing query throughput by taking advantage of work sharing.</div> [<a href="slides/johnson.pdf">Slides</a>]</td></tr>
+
+<tr> <td>Yanlei Dia <i>SASE+: Expressing and Evaluating Complex Event Patterns over Streams. </i><a href="javascript:toggle(118)">Click to toggle abstract. </a> <div id="118" style = 'display: None;'> <p style = "color:red; font-size:70%">  Complex event processing (CEP) is finding application in a growing number of stream environments such as financial services, RFID-based supply chain management, and electronic health systems. As information needs of these applications evolve, there is an increasing demand of event processing involving filtering, correlation, and sophisticated pattern matching. To support such processing, a mainstream approach has been to use selection-join-aggregation queries over streams. This approach has limitations in expressing complex event patterns as well as performance constraints. 
+
+In this talk, I present our ongoing research on complex event processing that explores a new processing paradigm grounded in automata and complexity theory while leveraging relational processing. Our research has focused on the development of a foundation for CEP including a compact event language, its theoretical underpinnings, and its efficient implementation.  
+
+Our event language, SASE+, offers rich constructs for specifying complex event patterns including sequencing, negation, Kleene closure, and complex predicates in addition to standard stream processing features. While various subsets of SASE+ can be expressed in recent SQL-based stream languages and standard logic such as the temporal logic, the field of CEP lacks a thorough understanding of what constitutes a minimum effective language for CEP and how various languages relate to each other. In our research, we characterize the expressive power of SASE+ and its relationships to various related languages. Results of this study provide insights into several key questions: (i) Why can’t existing languages express the desired event patterns? (ii) What are the connections between independently developed event systems? (iii) What optimizations are possible for queries with various complexities? 
+
+We also develop fundamental mechanisms for implementing SASE+ over event streams.  Departing from the conventional wisdom (e.g., using joins) for stream processing, our event system employs automata-based query plans: it uses automata-based sequence operators to read event sequences efficiently from continuously arriving events, and feeds these event sequences to the subsequent relational-style operators. Our system further applies compile-time and runtime optimizations for high-performance processing. The most challenging issue is to manage simultaneous runs of a query automaton, which naturally exist for most queries. To achieve efficiency, our system shares both storage and processing among multiple runs. To reduce memory usage, it uses new data structures for compact encoding of complete and partial results and shares such encoding across runs. It further merges runs based on their computation state, whenever possible, to avoid repeated work. 
+
+We have implemented SASE+ in a Java-based prototype system. Results of our performance study show that our automata-based query plans are highly efficient, offering throughput of tens of thousands of events per second for expensive queries and even higher throughput for cheaper queries. In particular, sharing in query evaluation can offer performance improvements of up to 200% for those expensive queries. Our results also show that automata-based plans provide much better scalability than join-based implementations that many existing stream systems use to support simple event patterns. 
+</div> [Slides Coming Soon]</td></tr>
+
+<tr> <td>Daniel Abadi. <i>A Column-Store is a Column-Store is a Column-Store. Or is it?. </i><a href="javascript:toggle(119)">Click to toggle abstract. </a> <div id="119" style = 'display: None;'> <p style = "color:red; font-size:70%">  Due to their I/O efficiency on read queries, column-stores have long been known to perform well on read-mostly data warehouse workloads. There has been a lot of work that experimentally and analytically compares the performance of column-stores and row-stores.  In general, this work validates the prediction that column-stores should outperform row-stores on data warehouse workloads. However, this body of work does not agree on the magnitude of relative performance. This magnitude ranges from only small differences in performance, to two orders of magnitude performance difference. In this talk, I will show that a major reason for this disagreement in performance difference is that there are multiple approaches to building a column-store. I then classify these multiple approaches into three general categories and describe an implementation of a column-store using each category. Performance of these different implementations are then compared, and indeed, large performance differences are observed. I will then explain the reasons why not all column-stores are created equal.</div> [<a href="slides/abadi.pdf">Slides</a>]</td></tr>
+
+<tr> <td>Liuba Shrira . <i>Split Snapshots: A New Approach to Old State Storage. </i><a href="javascript:toggle(108)">Click to toggle abstract. </a> <div id="108" style = 'display: None;'> <p style = "color:red; font-size:70%">  Time-travel (in a database) is an old &quot;holy grail&quot; problem.
+Many solutions have been explored but current approaches have limitations.
+The temporal database approach that captures logical states is complex.
+The file system snapshot approach has a high performance penalty.
+These limitations have proven a ``showstopper&#39;&#39; to making
+time-travel available to general applications in mainstream databases.
+We will describe a novel simple and efficient approach that paves the way
+to providing time-travel in general databases.
+
+</div> [Slides Coming Soon]</td></tr>
+
+<tr> <td>John Corwin. <i>NanoDB: A microkernel-based database system. </i><a href="javascript:toggle(130)">Click to toggle abstract. </a> <div id="130" style = 'display: None;'> <p style = "color:red; font-size:70%">  We have recently seen how specialized database engines can offer orders 
+of magnitude greater performance than traditional database engines when 
+designed for particular applications. New database engines such as 
+C-store, H-store, and Chunky-store have recently been proposed and 
+implemented, each having domain of applications in which they perform well.
+
+Current database engines, including both traditional, one-size-fits-all 
+engines and specialized engines have developed using a monolithic 
+design. While a database engine may be designed for extensibility in 
+particular areas such as replaceable indexing methods or user-extensible 
+data types, changes to other aspects of the system require vast 
+re-architecting of the system&#39;s code base. Specifically, we have
+observed that the research community tends to  
+develop completely new database engines in order to 
+implement and evaluate new algorithms or storage mechanisms
+instead of modifying existing open-source engines such as PostgreSQL
+or MySQL. Our own experience with extending PostgreSQL provides some 
+insight as to why this is the case -- these systems simply were not 
+designed with this type of flexibility in mind.
+
+In this talk I will present our work on NanoDB, a new microkernel-based 
+relational database engine. A microkernel based system consists of a 
+small kernel plus a number of modules that implement the major 
+functionally of the system. Such a design allows for much greater 
+flexibility when designing multiple systems -- modules may be added,
+configured, and exchanged to modify the functionality of the system.
+NanoDB uses a microkernel architecture to implement a declarative method of 
+constructing a database engine 
+that can easily be reconfigured to support a variety of target applications.
+</div> [Slides Coming Soon]</td></tr>
+
+<tr> <td> Anastasia Ailamaki. <i>Multi-core: Friend or Foe?</i> [<a href="slides/ailamaki.pdf">Slides</a>] </td> </tr>
+</table>
+
+
+</td></tr>
+</table>
+</body>
+</html>

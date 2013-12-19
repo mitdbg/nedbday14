@@ -1,0 +1,401 @@
+<html><head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <script type="text/javascript">
+
+function toggle(element) {
+
+  if (document.getElementById(element).style.display == "none") {
+
+    document.getElementById(element).style.display = "";
+
+  } else {
+
+    document.getElementById(element).style.display = "none";
+
+  }
+
+}
+
+</script> <title>New England Database Summit 2013 Program</title>
+    <style type="text/css">
+h2 {
+padding-left: 0em;
+      color : #0000CC;
+
+}
+
+title {
+}
+
+authors {
+}
+
+abstract {
+}
+
+BODY {
+padding-left: 16em;
+      background-color : #FFFFFF;
+      font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+      color : #000088;
+      margin: 0px; 
+      width: 700px;
+      }
+  ul.navbar {
+    position: absolute;
+    top: 0em;
+    left: 1em;
+    width: 11em }
+
+</style> </head>
+  <body fgcolor="#000000" style="                background-color: white;">
+    <table>
+      <tbody>
+        <tr>
+          <td><br>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <h2> New England Database Summit 2013 Program <br>
+            </h2>
+            <!-- Site navigation menu -->
+            <ul class="navbar">
+              <img src="logo.jpg" width="200">
+              <li><a href="index.html">Home page</a></li>
+              <li><a href="program.html">Program</a>
+              <li><a href="papers.php">Accepted Papers</a> </li>
+              <li><a href="posters.php">Accepted Posters</a></li>
+              <li><a href="http://whereis.mit.edu/map-jpg?selection=32">Map</a>
+              </li>
+            </ul>
+            <center>
+              <h2>Sponsors </h2>
+              <p>Special thanks to this year's sponsors:<br>
+                <br>
+                <table border="0" cellspacing="0" width="100%">
+                  <tbody>
+                    <tr>
+                      <td>&nbsp;<img style="width: 160px; height: 57px;" alt="emc_logo" src="logos/emc.jpeg"></td>
+                      <td align="left"><img src="logos/microsoft.jpg" width="180"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </p>
+            </center>
+Videos of all talks are available <a href="http://techtv.mit.edu/collections/nedb2013">here</a>.
+            <h3> Friday, February 1, 2013
+              <table frame="border">
+                <tbody>
+                  <tr>
+                    <td width="150"> <u>Time</u> </td>
+                    <td> <u>Event</u> </td>
+                  </tr>
+                  <tr>
+                    <td> 9:00-9:10am<br>
+                    </td>
+                    <td> <strong>Welcome</strong> (M. Riedewald and S. Madden)</td>
+                  </tr>
+                  <tr>
+                    <td valign="top"> 9:10-10:00</td>
+                    <td> <strong>Keynote 1</strong>: Phil Bernstein (Microsoft 
+					Research).
+                      <em>Rethinking Consistency</em> [<a href="slides/bernstein.ppsx">Slides</a>] <a href="javascript:toggle(-2)">Click
+                        to toggle abstract. </a>
+                      <div id="-2" style="display: none;">
+                        <p style="color: red; font-size: 70%;"> The past five years has seen a resurgence of work on replicated, distributed database systems, to meet the demands of intermittently-connected clients and disaster-tolerant database systems that span data centers. Each product or prototype uses a weakened definition of replica-consistency or isolation, and in some cases new mechanisms, to obtain improvements in partition-tolerance, availability, and performance. In this talk, I'll present a framework for defining and comparing weaker consistency and isolation properties. I'll show how these weaker properties affect the programming model and how they are leveraged by new mechanisms. Although I won't be recommending one solution above all others, I hope this framework will help architects navigate through this complex design space. This is joint work with Sudipto Das, also in MSR.
+ </p>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td> 10:00-10:20</td>
+                    <td> Coffee Break</td>
+                  </tr>
+                  <tr>
+                    <td>&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <th colspan="3" bgcolor="#8888FF"> Session 1 : <strong>(Chairs: 
+					M. Riedewald, S. Madden) </strong></th>
+                  </tr>
+                  <tr>
+                    <td valign="top">10:20-10:40</td>
+                    <td> John Hugg (VoltDB). <em>Determinism in High-Throughput 
+					Distributed Databases.</em> [<a href="slides/hugg.pdf">Slides</a>] <a href="javascript:toggle(12)">Click
+                        to show abstract. </a>
+                      <div id="12" style="display: none;">
+                        <p style="color: red; font-size: 70%;"> The original VoltDB academic papers leverage determinism to achieve high performance. Academic papers that promise revolutions in performance often gloss over robustness or assume certain conditions are always true or always false. Supporting a high-throughput distributed system in long-term, real-world deployments quickly demonstrates that many assumptions about systems or failure models are invalid.
+
+This talk will focus on determinism. Much of the content will be related to lessons learned while building and supporting the VoltDB database, but content will be framed as generally as possible. Most of the talk will apply to any distributed system focused on high throughput of many small operations, especially transactional applications.
+
+This talk will answer the following questions in the following order:
+
+What is determinism in the context of distributed databases?
+What are some basic sources of non-determinism and how can they be addressed?
+In what awesome ways can determinism be leveraged in distributed systems?
+How can non-determinism risks be mitigated and what are some interesting related engineering tradeoffs? </p>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td valign="top">10:40-11:00</td>
+                    <td>Yuan Yuan (Ohio State), Rubao Li (Ohio State), Xiaodong Zhang (Ohio State). <i> The Yin and 
+					Yang of Processing Data Warehousing Queries on GPU Devices. </i> [<a href="slides/yuan.pptx">Slides</a>] <a href="javascript:toggle(26)">Click
+                        to show abstract. </a>
+                      <div id="26" style="display: none;">
+                        <p style="color: red; font-size: 70%;">Database community has made significant research efforts to
+optimize query processing on GPUs in the past few years.
+However, we can hardly find that GPUs have been truly
+adopted in major data warehousing production systems. To
+understand main reasons behind this fact, we have conducted
+a comprehensive study to evaluate the performance
+of processing complex data warehousing queries by varying
+query characteristics, software optimization techniques, and
+GPU hardware configurations. Our study focuses on the
+two fundamental components of query execution on GPUs,
+PCIe data transfer and kernel execution, aiming at gaining
+deep insights on how they are affected by various factors
+from software to hardware. Furthermore, we also propose
+an analytical model to understand and predict the variations
+of the two factors. Based on our study, we present our
+performance insights and prediction for warehousing query
+execution on GPUs.</p>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td valign="top">11:00-11:20</td>
+                    <td>Alexandra Meliou (UMass Amherst). <i>The Power of How-To Queries. </i>[<a href="slides/meliou.pptx">Slides</a>] <a href="javascript:toggle(45)">Click
+                        to show abstract. </a>
+                      <div id="45" style="display: none;">
+                        <p style="color: red; font-size: 70%;">In this talk, I will discuss how-to queries, a new type of reverse data processing. A how-to query computes hypothetical updates to the database that achieve a desired effect on one or several outputs, while satisfying some global constraints. They can model complex business decisions and strategy planning processes. I will present Tiresias, the first how-to query engine, which integrates relational database systems with a linear programming
+engine.</p>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td valign="top">11:20-11:40</td>
+                    <td> Michael Stonebraker (MIT), Justin DeBrabant (Brown U), Stan Zdonik (Brown U), 
+					Andy Pavlo (Brown U), Stephen Tu (MIT). <em>The Traditional Wisdom is All 
+					Wrong</em><i>. </i>[<a href="slides/debrabant.pptx">Slides</a>] <a href="javascript:toggle(20)">Click
+                        to show abstract. </a>
+                      <div id="20" style="display: none;">
+                        <p style="color: red; font-size: 70%;">The traditional wisdom for OLTP applications is to build a disk-based RDBMS by maintaining a main-memory cache of "hot" disk blocks. Furthermore, if the RDBMS is not fast enough, then one should employ something like Memcached in front of the RDBMS. This hybrid architecture is implemented by a number of web properties, including Facebook.
+
+As an alternative, we have extended the main memory RDBMS H-Store so that it can manage larger-than-main-memory data bases, using a notion we call anti-caching. We show that H-Store extended by anti-caching is wildly faster than MySQL, regardless of the size of the data base on both the YCSB and TPC-C benchmarks. Even when fronted by Memcached, H-Store is still the performance winner.
+
+As a result, we assert that traditional OLTP RDBMSs are architected wrong and should be replaced by anti-caching implementations.</p>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td valign="top">11:40-12:00</td>
+                    <td>Jeremy Kepner (MIT Lincoln Labs). <i>Transforming Big Data with D4M.
+                      </i>[<a href="slides/kepner.pptx">Slides</a>] <a href="javascript:toggle(37)">Click to show
+                        abstract. </a>
+                      <div id="37" style="display: none;">
+                        <p style="color: red; font-size: 70%;">The growth of bioinformatics, social analysis, and network science is forcing data scientists to handle unstructured data in the form of genetic sequences, text, and graphs.  Triple store databases are a key enabling technology for this data and are used by many large Internet companies (e.g., Google Big Table, Amazon Dynamo, Apache HBase, and Apache Accumulo).  Triple stores are highly scalable and run on commodity clusters, but lack interfaces to support efficient development of the mathematical algorithms used by many data scientists.  D4M (Dynamic Distributed Dimensional Data Model) provides a parallel linear algebraic interface to triple stores.  Using D4M, it is possible to create composable analytics with significantly less effort than using traditional approaches.  The central mathematical concept of D4M is the “associative array” that combines spreadsheets, triple stores, and sparse linear algebra.  Associative arrays are group theoretic constructs that use fuzzy algebra to extend linear algebra to words and strings.  This talk describes the D4M technology, its mathematical foundations, application, and performance.</p>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td> 12:00-12:50 </td>
+                    <td> <strong>Lunch (Room 32-G449 Patil/Kiva)</strong> </td>
+                  </tr>
+                  <tr>
+                    <td> 12:50-1:10 </td>
+                    <td> <strong>Sponsor Acknowledgements</strong> </td>
+                  </tr>
+                  <tr>
+                    <td><br>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td valign="top"> 1:10-2:00</td>
+                    <td> <strong>Keynote 2</strong>: Mike Cafarella (University 
+					of Michigan).
+                      <i>Managing Spreadsheets.</i> [<a href="slides/cafarella.ppt">Slides</a>] <a href="javascript:toggle(-1)">Click
+                        to toggle abstract. </a>
+                      <div id="-1" style="display: none;">
+                        <p style="color: red; font-size: 70%;">Spreadsheets have evolved into a "Swiss Army Knife" for data management that allows non-experts to perform many database-style tasks. As a result, spreadsheet files are generally popular, easy for humans to understand, and contain interesting data on a wide range of topics. Spreadsheets' data should make them a prime target for integration with other sources, but their lack of explicit schema information makes doing so a painful and error-prone task.
+</p>
+<p style="color: red; font-size:70%">
+We propose a system that automatically extracts relational data from spreadsheets. Unlike past approaches, it is domain-independent and requires no up-front user guidance in the form of schemas, extraction rules, or training examples. To ensure high accuracy, it asks the user to explicitly repair any errors; the system then silently applies these repair operations to all relevant portions of a spreadsheet corpus, thereby dramatically reducing the average number of required repair steps. In addition to the extraction system, we will present a large-scale portrait of how spreadsheets are used for data management by examining 400,000 spreadsheets crawled from the Web.
+</p>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <th colspan="3" bgcolor="#8888FF"> Session 2: (Chair: T. 
+					Kraska) </th>
+                  </tr>
+                  <tr>
+                    <td valign="top">2:00-2:20</td>
+                    <td>Bryan Lewis (Paradigm4).<i> SciDB-R: A scalable programming 
+					environment for R. </i>[<a href="slides/lewis.pdf">Slides</a>] <a href="javascript:toggle(23)">Click
+                        to show abstract. </a>
+                      <div id="23" style="display: none;">
+                        <p style="color: red; font-size: 70%;">With over 2 million users, R is a widely adopted open-source programming environment for exploratory data analysis, computation, and visualization. Application of R to large-scale computation, however, can be difficult. With some exceptions, R is an in-memory computation system. And although R includes facilities for thread- and process-level parallelism, they are generally applicable to problems that can be divided into fully independent partitions. Finally, R data are often stored in files, complicating data management in shared environments.
+
+Many interfaces have been written to connect database management systems (DBMS) to R to deal with some of these issues. Data management is performed in the DBMS, often using SQL statements, before being copied over the wire to R, where the analytics are performed.  This “two system” approach has several limitations: 
+
+It requires users learn two programming environments with very different syntaxes and underlying data models
+
+From an efficiency point of view, it involves copying a lot of data back and forth, performing format conversion en-route
+
+Several commercial vendors are improving on this manual approach by embedding R in their address space and then allowing R routines to be executed as user defined functions within the database. This idea has substantial merit, but also some drawbacks, in particular:
+
+A new interface (user defined functions) must be learned by an R programmer
+
+Allowing for concurrent execution of many small R routines on partitioned data does not address some fundamental “big data” challenges, in particular ones that require direct parallel computation from a single R routine over very large data sets. 
+
+This NEDS proposal contains a very different mechanism to couple R with DBMS facilities.  Unlike the above approach, which calls R routines from inside a DBMS, we propose to leave the R user interface intact, thereby supporting existing R programs. To provide scalability, we define a new n-dimensional sparse array class for R that represents arrays within SciDB. Arithmetic operations, matrix decompositions, and other operations on the new array class are executed in parallel on distributed data by the SciDB array DBMS.
+
+SciDB implements reliable, transactional storage and a massively parallel execution engine that is capable of handling the full range of data manipulation operations. SciDB integrates with the R language at the level of linear algebra computations. Of course, SciDB has no size limits and automatically executes even sophisticated linear algebra computations in parallel on as many nodes as it is allotted. In this way the data protection, sharing and management functionalities of a DBMS are preserved, while simultaneously supporting existing R programs in an efficient, scalable way.  
+
+We propose to illustrate SciDB-R with two examples, which we will run both in native R and in SciDB-R.  The first of these examples performs a truncated singular value decomposition of a very large, sparse matrix.  This operation is widely used as the “guts” of recommendation engines used in many large web properties.  The goal is to cluster customers with similar behavior, but the technique has very general utility. It will not be surprising that SciDB-R can complete the calculation, while native R issues a run-time error.  
+
+The second example is taken from bioinformatics.  Given a matrix whose dimensions are a person identifier and their genetic features (SNPs, gene sequence, etc.), we want to simultaneously cluster the rows and columns. That is, we want to find groups of people sharing groups of genetic markers. This bi-clustering operation segments populations and will be demonstrated on a 60K by 60K dense matrix.  Again, native R addressing limits are exceeded, while SciDB-R executes the operation within operationally useful time constraints.
+
+Finally, a sketch of the SciDB-R implementation details will be presented.  If time permits, the talk will conclude with the importance of executing the inner loop (usually matrix multiply) very fast as well as our techniques for doing so.
+</p>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td valign="top">2:20-2:40</td>
+                    <td>Paul Olsen (SUNY Albany), Alan Labouseur (SUNY Albany), Jeong-Hyon Hwang (SUNY Albany). <em>
+					Quickly Finding the k Most Central Entities in Large 
+					Networks</em><i>.
+                      </i>[<a href="slides/hwang.pdf">Slides</a>] <a href="javascript:toggle(27)">Click to show
+                        abstract. </a>
+                      <div id="27" style="display: none;">
+                        <p style="color: red; font-size: 70%;">Many of today's applications can benefit from the discovery of the most central entities in real-world networks.
+Researchers have been developing techniques for finding the k most central entities in a network where the centrality of an entity is defined as the inverse of the average shortest path length from that entity to other entities.
+These previous techniques compute the centrality of each entity using a traditional single-source shortest path algorithm and then select k entities with the highest centrality values.
+Given a large network, however, these techniques incur high computational overhead.
+
+Our technique overcomes the above limitation.
+A key principle of our technique is to materialize intermediate results while a vertex's centrality is computed, and then reuse those results to speed up the computation of another vertex's centrality.
+Since the cost of each centrality computation may vary significantly depending on the choice of the previous computation, our technique schedules centrality computations in a manner that minimizes the estimated running time.
+Our technique also updates, with negligible overhead, an upper bound on the centrality of every entity.
+Using this information, entities that cannot belong to the final answer can be safely ignored, thereby further reducing the overall running time.
+In addition, our technique can quickly find an approximate answer (i.e., k entities with the highest estimated centrality values) and then gradually refine it until the final, correct answer is produced.
+In our experiments using various real-world data sets, our technique was orders of magnitude faster than the fastest traditional approach (e.g., 0.54 hours vs. 2.8 days) and exhibited higher performance benefits for larger data sets. </p>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td> 2:40-3:00</td>
+                    <td> Coffee Break</td>
+                  </tr>
+                  <tr>
+                    <td><br>
+                    </td>
+                    <td><br>
+                    </td>
+                    <td><br>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th colspan="3" bgcolor="#8888FF"> Session 3: (Chair: A. 
+					Meliou) </th>
+                  </tr>
+                  <tr>
+                    <td valign="top">3:00-3:20</td>
+                    <td>Alvin Cheung (MIT), Samuel Madden (MIT), Armando Solar-Lezama (MIT).
+					<i>Optimizing Database-Backed Applications with Program 
+					Synthesis. </i>[<a href="slides/cheung.pptx">Slides</a>] <a href="javascript:toggle(43)">Click
+                        to show abstract. </a>
+                      <div id="43" style="display: none;">
+                        <p style="color: red; font-size: 70%;">Object-relational mapping libraries are a popular way for applications to interact with databases because they provide transparent access to the database using the same language as the application. Unfortunately, using such frameworks easily leads to applications with poor performance because modularity concerns encourage developers to implement relational operations in application code, and doing so does not take advantage of the optimized implementations of relational operations, efficient query plans, or push down of predicates that database systems provide.
+
+In this paper we present QBS, a system that automatically transforms fragments of application logic into SQL queries. QBS differs from traditional compiler optimizations because it relies on synthesis technology to automatically generate invariants and post-conditions for a code fragment. The post-conditions and invariants are expressed using a theory of ordered relations that allows us to reason precisely about both the contents and order of the records produced even by complex code fragments that compute joins and aggregates. The theory is close in expressiveness to SQL, so the synthesized post-conditions can be readily translated to SQL queries. Using 49 code fragments automatically extracted from over 120k lines of open-source code written using the Java Hibernate ORM, we demonstrate that our approach can convert a variety of imperative constructs into relational specifications and significantly improve application performance asymptotically by orders of magnitude.</p>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td valign="top">3:20-3:40</td>
+                    <td>Wyatt Lloyd (Princeton), Michael J. Freedman (Princeton), Michael Kaminsky (Intel Labs), 
+					David G. Andersen (CMU). <i>
+                        Stronger Semantics for Low-Latency Geo-Replicated 
+					Storage. </i><a href="javascript:toggle(48)">Click
+                        to show abstract. </a>
+                      <div id="48" style="display: none;">
+                        <p style="color: red; font-size: 70%;">We present the first scalable, geo-replicated storage system
+that guarantees low latency, offers a rich data model,
+and provides "stronger" semantics. Namely, all clients
+requests are satisfied in the local datacenter in which
+they arise; the system efficiently supports useful data
+model abstractions such as column families and counter
+columns; and clients can access data in a causallyconsistent
+fashion with read-only and write-only transactional
+support, even for keys spread across many servers.
+The primary contributions of this work are enabling
+scalable causal consistency for the complex columnfamily
+data model, as well as novel, non-blocking algorithms
+for both read-only and write-only transactions.
+Our evaluation shows that our system, Eiger, achieves
+low (single-ms) latency and has throughput competitive
+with eventually-consistent and non-transactional Cassandra,
+upon which it is built. Despite Eiger’s stronger
+semantics, its throughput is within 15% of Cassandra’s
+for a large variety of workloads and within 7% for one
+of Facebook’s real-world workloads.</p>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td valign="top">3:40-4:00</td>
+                    <td> Tim Kraska (Brown U).<i> MLbase: A Distributed Machine-learning System. </i>[<a href="slides/kraska.pdf">Slides</a>] <a href="javascript:toggle(54)">Click
+                        to show abstract. </a>
+                      <div id="54" style="display: none;">
+                        <p style="color: red; font-size: 70%;">Machine learning (ML) and statistical techniques are key to transforming big data into actionable knowledge. In spite of the modern primacy of data, the complexity of existing ML algorithms is often overwhelming—many users do not understand the trade-offs and challenges of parameterizing and choosing between different learning techniques. Furthermore, existing scalable systems that support machine learning are typically not accessible to ML researchers without a strong background in distributed systems and low-level primitives.
+
+In this talk I will present MLbase, a novel system harnessing the power of machine learning for both end-users and ML researchers. MLbase provides (1) a simple declarative way to specify ML tasks, (2) a novel optimizer to select and dynamically adapt the choice of learning algorithm, and (3) a set of high-level operators to enable ML researchers to scalably implement a wide range of ML methods without deep systems knowledge.
+</p>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td valign="top">4:00-4:20</td>
+                    <td> Justin DeBrabant (Brown U), Leilani Battle (MIT), Ugur Cetintemel (Brown U), Stan 
+					Zdonik (Brown U), Michael Stonebraker (MIT).<i> Techniques for Visualizing 
+					Massive Data Sets. </i>[<a href="slides/battle.pptx">Slides</a>] <a href="javascript:toggle(100)">Click
+                        to show abstract. </a>
+                      <div id="100" style="display: none;">
+                        <p style="color: red; font-size: 70%;">As many scientists move to a more data-driven analysis pipeline, large multidimensional datasets are becoming more common. In this analysis environment, scientists need to analyze massive amounts of data in an interactive manner and as quickly as possible. Unfortunately, previous methods of interacting and exploring data have not necessarily kept pace with the growth of data. In particular, many scientific visualization applications were designed to be interactive on the assumption that much, if not all, of the data would fit in memory, which is no longer the case. Because of the increased latency of having much of the data reside on disk and potentially across a network, the real-time interactivity of these visualization tools has suffered and scientists’ time is wasted trying to wade through massive amounts of data. In this talk we describe our experiments with several techniques that attempt to restore some if not all of the missing interactivity. In particular, we propose a prefetching and caching middleware for fetching data from disk in between user queries, thereby hiding disk latency, the major interactivity bottleneck. We also propose a resolution reduction technique to reduce the data being sent to the frontend visualization application. Combined, we show that these techniques can significantly improve the overall interactivity of the frontend visualization system.</p>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td> 4:30 PM</td>
+                    <td> <strong><a href="posters.php">Poster Session</a></strong>
+                      and Appetizers / Drinks (Building 32, R&amp;D Area, 4th
+                      Floor)</td>
+                  </tr>
+                  <tr>
+                    <td> 6:30 PM</td>
+                    <td> Adjourn </td>
+                  </tr>
+                </tbody>
+              </table>
+              <!-- Details coming soon!  A <a href="papers.php"> list of accepted papers </a> is available. -->
+            </h3>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  
+
+</body></html>
