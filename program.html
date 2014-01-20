@@ -271,16 +271,7 @@ padding-left: 16em;
                   </tr>
                   <tr>
                     <td valign="top">3:40-4:00</td>
-                     <td> Michael Stonebraker (MIT)<i> OLTP DBMSs are all Wrong</i> <a href="javascript:toggle(100)">Click
-	                        to show abstract. </a>
-	                      <div id="100" style="display: none;">
-							<p style="color: blue; font-size: 70%;">Michael Stonebraker*, MIT</p>
-	                        <p style="color: red; font-size: 70%;">The traditional wisdom for building OLTP DBMSs is to:    1) organize blocks of data on disk, with a main memory block cache.    2) implement an Aries-style write-ahead log.  3) use record level locking.  4) utilize a multi-threaded architecture.  5) Use an active-passive architecture for replication  6) use multi-threading    This traditional wisdom is exemplified in all the major DBMS products, including DB2, MySQL, Postgres, SQL Server, and Oracle.  In this talk we summarize the results of two recent papers and add new results on the efficiency of replication strategies.    Together these results present an essentially airtight case for:    1) a main memory DBMS  2) which archives cold tuples to secondary storage  3) active-active replication  4) operation (not data) logging  5) a lightweight concurrency control system that performs deterministic scheduling (OCC and MVCC are not deterministic)  6) either single threading or an architecture with few-to-none shared data structures    We conclude with the observation that essentially all OLTP DBMSs will need to be completely rewritten.      </p>
-	                      </div>
-	                    </td>
-                  </tr>
-                  <tr>
-                    <td valign="top">4:00-4:20</td>
+
                     <td> Nesime Tatbul (Intel Labs) <i> S-Store: A Streaming OLTP System for Big Velocity Applications</i> <a href="javascript:toggle(110)">Click
                         to show abstract. </a>
                       <div id="110" style="display: none;">
@@ -288,6 +279,16 @@ padding-left: 16em;
                         <p style="color: red; font-size: 70%;">In this talk, we will present S-Store - a new data management system for high-throughput low-latency transaction processing over large data sets that are frequently updated with high-speed data streams. The talk will cover the key ideas behind S-Store's architectural design, its ongoing prototype implementation as an extension to the H-Store main-memory OLTP system, and first experimental results comparing S-Store against H-Store. We will also discuss our ongoing efforts to address various research challenges that generally arise in a streaming OLTP system like S-Store.   </p>
                       </div>
                     </td>
+                  </tr>
+                  <tr>
+                    <td valign="top">4:00-4:20</td>
+                     <td> Michael Stonebraker (MIT)<i> OLTP DBMSs are all Wrong</i> <a href="javascript:toggle(100)">Click
+	                        to show abstract. </a>
+	                      <div id="100" style="display: none;">
+							<p style="color: blue; font-size: 70%;">Michael Stonebraker*, MIT</p>
+	                        <p style="color: red; font-size: 70%;">The traditional wisdom for building OLTP DBMSs is to:    1) organize blocks of data on disk, with a main memory block cache.    2) implement an Aries-style write-ahead log.  3) use record level locking.  4) utilize a multi-threaded architecture.  5) Use an active-passive architecture for replication  6) use multi-threading    This traditional wisdom is exemplified in all the major DBMS products, including DB2, MySQL, Postgres, SQL Server, and Oracle.  In this talk we summarize the results of two recent papers and add new results on the efficiency of replication strategies.    Together these results present an essentially airtight case for:    1) a main memory DBMS  2) which archives cold tuples to secondary storage  3) active-active replication  4) operation (not data) logging  5) a lightweight concurrency control system that performs deterministic scheduling (OCC and MVCC are not deterministic)  6) either single threading or an architecture with few-to-none shared data structures    We conclude with the observation that essentially all OLTP DBMSs will need to be completely rewritten.      </p>
+	                      </div>
+	                    </td>
                   </tr>
                   <tr>
                     <td>&nbsp;</td>
