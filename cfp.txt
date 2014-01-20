@@ -1,10 +1,10 @@
-                   New England Database Summit 2014
-                          (NEDB Summit '14)
+                 New England Database Summit 2014
+                         (NEDB Summit '14)
 
-                           January 31, 2014
-                  http://db.csail.mit.edu/nedbday14/
+                          January 31, 2014
+                 http://db.csail.mit.edu/nedbday14/
 
-This is a call for papers and participants for the Fifth Annual New
+This is a call for papers and participants for the Seventh Annual New
 England Database Summit (NEDB Summit '14). This will be an all day
 conference-style event where participants from the research community
 in the New England area can come together to present ideas and discuss
@@ -21,8 +21,8 @@ Event details
 NEDB Summit 2014 will be held on the MIT campus, in room 32-123 of the
 Stata Center, located at 32 Vassar St. on the corner of Main St. and
 Vassar St. in Cambridge. The room is on the first floor.  The event
-will be held on Friday, February 3, 2014, from 9:00 am to 4:00 pm,
-followed by appetizers and drinks at a poster session.
+will be held on Friday, January 31, 2014, from 9:00 am to 4:00 pm,
+followed by appetizers and drinks and a poster session.
 
 Technical Program
 -----------------
@@ -31,14 +31,16 @@ The program will consist of several invited talks, a number of short
 (15-20 minute) presentations from you, the participants, and a poster
 session!
 
-If you wish to submit a poster or short talk proposal, please visit
+If you wish to submit a short talk or poster proposal, please visit
 the  Microsoft Conference Management System for the 2014
-summit, at https://cmt.research.microsoft.com/NEDB2014/.
+summit, at:
+
+https://cmt.research.microsoft.com/NEDB2014/
 
 For posters, we require a 1 paragraph abstract.  For short talks, we
 require a 2 page maximum PDF talk abstract (any format, 10 pt font or
-larger).  Submissions must be made by January 4, 2014. All reasonable
-posters will be accepted; talk invitations will be made by January 13,
+larger).  Submissions must be made by January 10, 2014. All reasonable
+posters will be accepted; talk invitations will be made by January 14,
 2014. We expect to select 5-7 short talk papers for
 presentation. Selection decisions will be made by the program
 committee.
@@ -48,8 +50,7 @@ Registration
 
 To register for the conference, visit the registration site at:
 
-http://www.eventbrite.com/e/new-england-database-day-summit-tickets-9897331184
-
+http://snipurl.com/28d5cjl
 
 Important Dates
 --------------
@@ -66,8 +67,3 @@ General Chair:	     Samuel Madden (MIT)
 Program Chair:       Tim Kraska (Brown U.)
 
 Program Committee:  TBD
-
-Sponsors
---------
-
-Special thanks to our sponsors EMC, Microsoft, and paradigm4.

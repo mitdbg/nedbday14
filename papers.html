@@ -1,0 +1,104 @@
+<html>
+
+<head>
+
+<script type="text/javascript">
+
+function toggle(element) {
+
+ if (document.getElementById(element).style.display == "none") {
+
+ document.getElementById(element).style.display = "";
+
+ } else {
+
+ document.getElementById(element).style.display = "none";
+
+ }
+
+}
+
+</script>
+
+<title>New England Database Summit Papers</title>
+<style type="text/css">
+h2 {
+padding-left: 0em;
+ color : #0000CC;
+
+}
+
+title {
+}
+
+authors {
+}
+
+abstract {
+}
+
+BODY {
+padding-left: 16em;
+ background-color : #FFFFFF;
+ font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+ color : #000088;
+ margin: 0px; 
+ width: 700px;
+ }
+ ul.navbar {
+ position: absolute;
+ top: 0em;
+ left: 1em;
+ width: 11em }
+
+</style>
+
+</head>
+<body bgcolor=#FFFFFF fgcolor=#000000>
+
+<table>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td>
+<h2>
+New England Database Summit Papers for Presentation <br> 
+</h2>
+<h3>
+List of accepted papers:
+</h3>
+
+
+<!-- Site navigation menu -->
+<ul class="navbar">
+              <img src="newengland.jpg" width="200">
+              <li><a href="http://db.csail.mit.edu/nedbday14">Home page</a></li>
+              <li><a href="program.html">Program</a> </li>
+              <li><a href="papers.html">Accepted Papers</a> </li>
+              <li><a href="posters.html">Accepted Posters</a> </li>
+	                 <li><a href="http://www.eventbrite.com/e/new-england-database-day-summit-tickets-9897331184">Registration</a>
+              <li><a href="https://cmt.research.microsoft.com/NEDB2014/">Submission Site</a>
+              </li>
+              <li><a href="http://whereis.mit.edu/map-jpg?selection=32">Map</a>
+              </li>
+            </ul>
+<ul>
+
+ <table>
+ <li>Daniel Tahara*, Yale University; Daniel Abadi, Yale University<br/><strong>SQL Beyond Structure: Text, Documents and Key-Value Pairs </strong><a href="javascript:toggle(2)"><br/>Click to show abstract. </a> <div id="2" style = 'display: None;'> <p style = "color:black; font-size:100%; font-style:italic">Despite, or perhaps because of, the bevy of data formats used in modern applications, the development community has yet to settle on a standard query interface for analyzing that data in an efficient manner. As a result, they are forced to rely on complicated scripting and ETL in order to analyze their data, significantly increasing their overall &lsquo;time to insight.&rsquo; Meanwhile, SQL remains entrenched among the skillsets of analysts and database managers, with conventional wisdom saying that its semantics are incompatibile with the new, relaxed data formats. However, with our &lsquo;Flexible Schema and Multi-structured Tables&rsquo; approach, we show that it is possible to unify structured, semi-structured, and fully un- structured data as part of a single analytics system. Our approach defines an extended relational abstraction (Multi- structured Tables) that maps arbitrarily structured data into a schema-ed, relational view (Flexible Schema). With these two components, we can then provide a storage backend in order to supply a performant, fully SQL-compliant analytics backend.</div><p></li>
+ <li>Alvin Cheung*, MIT CSAIL; Sam Madden, MIT; Armando Solar-Lezama, MIT CSAIL<br/><strong>Using Lazy Evaluation for Query Batching </strong><a href="javascript:toggle(7)"><br/>Click to show abstract. </a> <div id="7" style = 'display: None;'> <p style = "color:black; font-size:100%; font-style:italic">(please refer to pdf contents)</div><p></li>
+ <li>Evan Jones*, Mitro<br/><strong>Trouble with Transactions (and other DB problems for small apps) </strong><a href="javascript:toggle(11)"><br/>Click to show abstract. </a> <div id="11" style = 'display: None;'> <p style = "color:black; font-size:100%; font-style:italic">Many things that database researchers consider &ldquo;solved&rdquo; are still problems for application developers in the "real world." As a former database researcher, I am personally guilty of working on problems that are interesting, without any experience actually building applications using databases. I've spent the last two years actually building applications that use databases, and I believe there is an opportunity for researchers and vendors to improve the state of the art by focusing on "usability" for application developers. In this talk, I&rsquo;ll present my observations about what things actually cause developers pain, particularly for &ldquo;small&rdquo; apps that can comfortably fit on a single machine. This probably describes the vast majority of applications, and possibly even the majority of developer-hours, so these observations are (hopefully) widely applicable. </div><p></li>
+ <li>Yin Huai*, The Ohio State Univeristy; Ashutosh Chauhan, Hortonworks; Alan Gates, Hortonworks; Gunther Hagleitner, Hortonworks; Eric Hanson, Microsoft; Owen O&rsquo;Malley, Hortonworks; Jitendra Pandey, Hortonworks; Yuan Yuan, The Ohio State University; Rubao Lee, The Ohio State University; Xiaodong Zhang, The Ohio State University<br/><strong>Major Technical Advancements in Apache Hive </strong><a href="javascript:toggle(16)"><br/>Click to show abstract. </a> <div id="16" style = 'display: None;'> <p style = "color:black; font-size:100%; font-style:italic">Apache Hive is a widely used data warehouse system for Apache Hadoop, and has been adopted by many organizations for various big data analytics applications. Closely working with many users and organizations, we have identified several shortcomings of Hive in its file formats, query planning, and query execution, which are key factors determining the performance of Hive. In order to make Hive continuously satisfy the requests and requirements of process- ing increasingly high volumes data in a scalable and efficient way, we have set two goals related to storage and runtime performance in our efforts on advancing Hive. First, we aim to maximize the effective storage capacity and to accelerate data accesses to the data warehouse by updating the existing file formats. Second we aim to significantly improve cluster resource utilization and runtime performance of Hive by developing a highly optimized query plan- ner and a highly efficient query execution engine. In this paper, we present a community-based effort on technical advancements in Hive. Our performance evaluation shows that these advancements provide significant improvements on storage efficiency and query execution performance.</div><p></li>
+ <li>Aditya Parameswaran*, UIUC<br/><strong>SeeDB: Visualizing Database Queries Efficiently </strong><a href="javascript:toggle(17)"><br/>Click to show abstract. </a> <div id="17" style = 'display: None;'> <p style = "color:black; font-size:100%; font-style:italic">Data scientists rely on visualizations to interpret the data returned by queries, but finding the right visualization remains a manual task that is often laborious. We propose a DBMS that partially automates the task of finding the right visualizations for a query. In a nutshell, given an input query Q, the new DBMS optimizer will explore not only the space of physical plans for Q, but also the space of possible visualizations for the results of Q. The output will comprise a recommendation of potentially "interesting" or "useful" visualizations, where each visualization is coupled with a suitable query execution plan. In our talk, we will first discuss the technical challenges in building this system, and then present our current design as well as preliminary results. The talk will be based on a vision paper, accepted to be presented at VLDB'14 (with N. Polyzotis and H. Garcia-Molina), as well as subsequent work with M. Vartak and S. Madden. </div><p></li>
+ <li>Michael Stonebraker*, MIT<br/><strong>OLTP DBMSs are all Wrong </strong><a href="javascript:toggle(21)"><br/>Click to show abstract. </a> <div id="21" style = 'display: None;'> <p style = "color:black; font-size:100%; font-style:italic">The traditional wisdom for building OLTP DBMSs is to: 1) organize blocks of data on disk, with a main memory block cache. 2) implement an Aries-style write-ahead log. 3) use record level locking. 4) utilize a multi-threaded architecture. 5) Use an active-passive architecture for replication 6) use multi-threading This traditional wisdom is exemplified in all the major DBMS products, including DB2, MySQL, Postgres, SQL Server, and Oracle. In this talk we summarize the results of two recent papers and add new results on the efficiency of replication strategies. Together these results present an essentially airtight case for: 1) a main memory DBMS 2) which archives cold tuples to secondary storage 3) active-active replication 4) operation (not data) logging 5) a lightweight concurrency control system that performs deterministic scheduling (OCC and MVCC are not deterministic) 6) either single threading or an architecture with few-to-none shared data structures We conclude with the observation that essentially all OLTP DBMSs will need to be completely rewritten. </div><p></li>
+ <li>Tobias M&uuml;hlbauer*, Technische Universit&auml;t M&uuml;nchen; Florian Funke, ; Viktor Leis, ; Henrik M&uuml;he, ; Wolf R&ouml;diger, ; Alfons Kemper, ; Thomas Neumann, <br/><strong>HyPer: one DBMS for all </strong><a href="javascript:toggle(24)"><br/>Click to show abstract. </a> <div id="24" style = 'display: None;'> <p style = "color:black; font-size:100%; font-style:italic">Ever increasing main memory capacities and processors with multiple cores have fostered the development of database systems that process and store data solely in main memory. This talk presents HyPer, a high-performance hybrid OLTP&amp;OLAP main memory database system. Unlike other main memory database systems, HyPer aims at providing highest performance for both, OLTP AND OLAP workloads on brawny AND wimpy systems. OLAP query processing is separated from mission-critical OLTP transaction processing using an efficient virtual memory (VM) snapshotting mechanism. Platform-independent high-performance OLTP and OLAP is achieved by efficiently compiling transactions and queries into efficient target machine code. Even though the SQL-92 standard, a PL/SQL-like scripting language, and ACID-compliant transactions are supported, HyPer has a memory footprint of just a few megabytes. In particular, this talk highlights recent research efforts in the HyPer project, including (i) the adaptive radix tree (ART), (ii) using Intel's recent hardware transactional memory (HTM) features for transaction processing, (iii) tentative execution of long-running transactions, (iv) compaction of memory-resident data, (v) efficient bulk loading of flat files at the wire speed of SSDs and 10 GbE adapters, (vi) the development of a locality-sensitive data-shuffling scheme, and (vii) a scaled-out version of the HyPer system that allows elastic OLAP throughput on transactional data.</div><p></li>
+ <li>Nesime Tatbul*, Intel Labs and MIT; Ugur Cetintemel, Brown; Tim Kraska, Brown; Sam Madden, MIT; John Meehan, Brown University; Andrew Pavlo, CMU; Michael Stonebraker, MIT; Hawk Wang, MIT; Stan Zdonik, Brown<br/><strong>S-Store: A Streaming OLTP System for Big Velocity Applications </strong><a href="javascript:toggle(35)"><br/>Click to show abstract. </a> <div id="35" style = 'display: None;'> <p style = "color:black; font-size:100%; font-style:italic">In this talk, we will present S-Store - a new data management system for high-throughput low-latency transaction processing over large data sets that are frequently updated with high-speed data streams. The talk will cover the key ideas behind S-Store's architectural design, its ongoing prototype implementation as an extension to the H-Store main-memory OLTP system, and first experimental results comparing S-Store against H-Store. We will also discuss our ongoing efforts to address various research challenges that generally arise in a streaming OLTP system like S-Store.</div><p></li>
+ <li>Alekh Jindal*, MIT; Sam Madden, MIT; Amol Deshpande, ; Michael Stonebraker, MIT<br/><strong>Graph Analytics on Relational Databases </strong><a href="javascript:toggle(37)"><br/>Click to show abstract. </a> <div id="37" style = 'display: None;'> <p style = "color:black; font-size:100%; font-style:italic">Graph analytics is getting increasingly popular these days and there is a deluge of new systems for graph analytics. However, it is not clear how good or bad are the relational databases for graph analytics. In this talk, I will share our experiences with graph analytics on relational databases. Contrary to the popular belief, modern relational databases can have very good performance over graph analytics. Furthermore, we can offer better (and efficient) programming interfaces for expressing graph queries in relational databases, thereby not forcing the users to SQL.</div><p></li>
+ <li>Panchapakesan Shyamshankar, Johns Hopkins University; Yotam Barnoy, Johns Hopkins University; Yanif Ahmad*, Johns Hopkins University<br/><strong>K3: Declarative Data Systems Programming </strong><a href="javascript:toggle(47)"><br/>Click to show abstract. </a> <div id="47" style = 'display: None;'> <p style = "color:black; font-size:100%; font-style:italic">We present K3, a software stack for building flexible distributed data management tools. Motivated by the rapid uptake of data management and data analysis methods in numerous disciplines, K3's goals are to facilitate the simplified construction of domain-specific data systems and processing pipelines. Its core contribution is a declarative abstraction layer that provides a separation of concerns between an algorithm's design in a general-purpose language, and its implementation and deployment as a distributed system. In this talk, we present the ongoing design of two central features of our abstraction layer, declarative segmented data structures, and declarative execution strategies. Our talk will focus on the abstraction layer design rather than on cost-based optimization techniques.</div><p></li>
+ <li>Alexander Kalinin*, Brown University; Ugur Cetintemel, Brown; Stan Zdonik, Brown<br/><strong>Interactive Data Exploration using Constraints </strong><a href="javascript:toggle(48)"><br/>Click to show abstract. </a> <div id="48" style = 'display: None;'> <p style = "color:black; font-size:100%; font-style:italic">In this talk we present a vision of an interactive data exploration system, called SearchLight. The system is a fusion of Constraint Programming (CP) solvers and DBMSs. Data exploration is treated as a data-driven, online search problem and the CP solver is used to efficiently explore the constrained search space. SearchLight allows users to explore large data sets by searching for objects of interest expressed through rich constraints. It seamlessly mediates a CP engine and a DBMS. SearchLight accelerates access to data by smart caching, prefetching and query optimization techniques, while making the solver cost-aware. As a first step towards SearchLight, we present an exploration framework for multi-dimensional data called Semantic Windows (SW), in which users query for rectangular &#96;&#96;windows'' of interest via standard declarative SQL-style queries enhanced with exploration constructs. Users can specify SWs using (i) shape-based constraints, e.g., &#96;&#96;identify all 3-by-5 windows'' and (ii) content-based constraints, e.g., &#96;&#96;identify all windows in which the average brightness of stars exceeds 0.8''. We argue that the SW approach enables the interactive processing of a host of useful exploratory queries that are difficult to express and optimize using standard DBMS techniques. To demonstrate the utility and practicality of the constraint-based approach, we implemented SW as a distributed layer on top of PostgreSQL and SciDB. We show experimental results with real-world and artificial data that reveal SW can offer online results quickly and continuously with little or no degradation in query completion times.</div><p></li>
+</ul>
+</td></tr>
+</table>
+</body>
+</html>
